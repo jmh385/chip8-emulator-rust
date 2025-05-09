@@ -1,6 +1,5 @@
 use crate::chip8_types::{chip8_command::Chip8CommandData, chip8_emulator::InMemoryChip8Emulator};
 
-
 //FX07
 pub fn get_delay_timer(emulator: &mut InMemoryChip8Emulator, data: &mut Chip8CommandData) {
     emulator.registers[data.nibble_2 as usize] = emulator.delay_timer as i32;

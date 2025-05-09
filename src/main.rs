@@ -153,10 +153,10 @@ fn bootstrap_device() -> Device {
         integer_to_scancode,
         scancode_to_integer,
     );
-    return  Device::new(emulator, 800, 400)
+    return Device::new(emulator, 800, 400);
 }
 
-fn main() -> Result<(), String>{
+fn main() -> Result<(), String> {
     bootstrap_device().run("path/to/file")?;
     return Ok(());
 }
